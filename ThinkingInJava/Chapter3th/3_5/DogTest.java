@@ -1,0 +1,34 @@
+import java.util.*;
+public class  DogTest
+{
+	public static void main(String[] args) 
+	{
+		Dog dog1 = new Dog();
+		Dog dog2 = new Dog();
+		dog1.name = "spot";
+		dog1.says = "Ruff!";
+		dog2.name = "spot";
+		dog2.says = "Ruff!";		
+		System.out.println("dog1.name = " + dog1.name +
+					" dog1.says = " + dog1.says);
+		System.out.println("dog2.name = " + dog2.name +
+					" dog2.says = " + dog2.says);
+		//Á·Ï°6
+		Dog dog3 = new Dog();
+		dog3 = dog1;
+		System.out.println("== result: " + (dog1 == dog3));
+		System.out.println("equals result: " + dog1.equals(dog3));
+
+		System.out.println("== result: " + (dog1 == dog2));
+		System.out.println("equals result: " + dog1.equals(dog2));
+
+		System.out.println("== result: " + (dog2 == dog3));
+		System.out.println("equals result: " + dog2.equals(dog3));
+	}
+}
+
+class Dog
+{
+	String name;
+	String says;
+}
