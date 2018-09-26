@@ -1,0 +1,10 @@
+package access.local;
+public class PackagedClass 
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("Creating a packaged class");
+	}
+}
+
+
