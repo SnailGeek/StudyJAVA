@@ -1,0 +1,26 @@
+public class Practice3 
+{
+	public static void main(String[] args) 
+	{
+		ChildClass cc = new ChildClass();
+		cc.print();
+	}
+}
+
+abstract class ParentClass
+{
+	ParentClass()
+	{
+		print();
+	}
+	public abstract void print();
+}
+
+class ChildClass extends ParentClass
+{
+	private int id = 1;
+	public void print()
+	{
+		System.out.println(id);
+	}
+}
