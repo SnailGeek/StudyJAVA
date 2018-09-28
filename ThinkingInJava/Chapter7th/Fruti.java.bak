@@ -1,0 +1,13 @@
+package fruit;
+public class Fruit 
+{
+	String color;
+	public Fruit(String color)
+	{
+		this.color = color;
+	}
+	protected set(String cl)
+	{
+		color = cl;
+	}
+}

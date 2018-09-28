@@ -1,0 +1,8 @@
+package access;
+public class  Widget
+{
+	Widget()
+	{
+		System.out.println("Create Widget");
+	}
+}

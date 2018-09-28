@@ -1,0 +1,6 @@
+ setET.clear();
+ std::vector<UINT64> selectedElementType = m_pElemTree->GetCheckedElements();
+ for (size_t i = 0; i < selectedElementType.size(); i++)
+ {
+     setET.insert(selectedElementType[i]);
+ }
