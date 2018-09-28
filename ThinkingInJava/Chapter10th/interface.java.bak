@@ -1,0 +1,6 @@
+package practice6;
+
+public interface interface1
+{
+	void print();
+}

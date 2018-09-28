@@ -1,0 +1,30 @@
+interface Selector
+{
+	boolean end();
+	Object current();
+	void next();
+}
+
+public class  Sequence
+{
+	private String str;
+	
+	private class SequenceSelector implements Selector
+	{
+		public String toString()
+		{
+			return str;
+		}
+	}
+	public Selector selector()
+	{
+		return new SequenceSelector();
+	}
+
+	public static void main(String[] args) 
+	{
+		Sequence test = new Sequence(1, "test");
+		SequenceSelector hh = test.selector();
+		System.out.println(hh.toString());
+	}
+}
