@@ -1,0 +1,7 @@
+package Chapter18;
+
+public enum MailHandler
+{
+    GENERAL_DELIVERY, MACHINE_SCAN, VISUAL_INSPECTION,
+    RETURN_TO_SENDER, TRANSMIT_TO_OTHER
+}

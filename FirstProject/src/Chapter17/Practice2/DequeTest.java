@@ -1,0 +1,25 @@
+package Chapter17.Practice2;
+import static net.mindview.util.Print.*;
+
+public class DequeTest
+{
+    static void fillTest(Deque<Integer> deque)
+    {
+        for (int i = 20; i < 27; i++)
+            deque.addFirst(i);
+        for (int i = 50; i < 55; i++)
+            deque.addFirst(i);
+    }
+    public static void main(String[] args)
+    {
+        Deque<Integer> di = new Deque<>();
+        fillTest(di);
+        print(di);
+        while (di.size() != 0)
+            printnb(di.removeFirst() + " ");
+        print();
+        fillTest(di);
+        while(di.size() != 0)
+            printnb(di.removeLast() + " ");
+    }
+}
